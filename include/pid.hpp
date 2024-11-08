@@ -12,8 +12,8 @@ struct pid_consts {
 }pid_drive_constants, pid_turn_constants;
 
 void pidInit(){
-    pid_drive_constants = {0.05, 0.0, 0.0};
-    pid_turn_constants = {20, 0.0, 0.0};
+    pid_drive_constants = {0.1, 0.0, 0.0};
+    pid_turn_constants = {5, 0.0, 0.0};
 }
 
 void pidDrive(double target, int timeout, const pid_consts &constants=pid_drive_constants){
